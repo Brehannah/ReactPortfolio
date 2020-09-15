@@ -19,6 +19,7 @@ function Navbar() {
             >
               About Me
             </Link>
+            <br/>
           </li>
           <li className="nav-item">
             <Link

@@ -1,4 +1,41 @@
-// import React, { Component } from 'react';
+
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+
+import Navbar from "./components/Navbar";
+
+import Contact from "./pages/contact";
+import Portfolio from "./pages/portfolio";
+import Index from "./pages/index";
+
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <Navbar />
+   
+          <Route exact path="/" component={Index} />
+          <Route exact path="/index" component={Index} />
+          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/about" component={About} /> */}
+          
+          <Route exact path="/portfolio" component={Portfolio} />
+          
+        
+        
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+
+//import React, { Component } from 'react';
 // import './App.css';
 // import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 // import Main from './components/main';
@@ -37,37 +74,3 @@
 // }
 
 // export default App;
-
-
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
-
-import Navbar from "./components/Navbar";
-
-import Contact from "./pages/contact";
-import Portfolio from "./pages/portfolio";
-import Index from "./pages/index";
-
-
-function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-   
-          <Route exact path="/" component={Index} />
-          <Route exact path="/index" component={Index} />
-          <Route exact path="/contact" component={Contact} />
-          {/* <Route exact path="/about" component={About} /> */}
-          
-          <Route exact path="/portfolio" component={Portfolio} />
-          
-        
-        
-      </div>
-    </Router>
-  );
-}
-
-export default App;

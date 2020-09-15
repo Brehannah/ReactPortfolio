@@ -10,14 +10,14 @@ function FriendCard(props) {
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {props.name}
+            <strong>Title:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Link:</strong> {props.Link}
           </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
+          {/* <li>
+            <strong>Description:</strong> {props.location}
+          </li> */}
         </ul>
       </div>
       {/* <span onClick={() => props.removeFriend(props.id)} className="remove">

@@ -1,13 +1,14 @@
 import React from 'react';
+// import react from './images/BHresume.pdf';
 
 
-const about = () => {
+const index = () => {
   return(
       <div>
     <div className="container">
         <h1><strong>BREANA HANNAH</strong></h1>
     
-        <p className="lead" id="subHeader">FULL STACK WEB DEVELOPER</p>
+        <p className="lead" id="subHeader"> JUNIOR FULL STACK WEB DEVELOPER</p>
     </div>
     <br/>
     <br/>
@@ -26,9 +27,11 @@ const about = () => {
 <div className="container">
     <div className="row">
         <div className="col">
-            <a href="https://github.com/Brehannah"><button className="btn btn-outline-dark">GITHUB</button></a>
-            <a href="www.linkedin.com/in/breana-hannah"><button className="btn btn-outline-dark">LINKEDIN</button></a>
-            <a href="../Resume.pdf" target="_blank"><button className="btn btn-outline-dark">RESUME</button></a>
+            <a href="https://github.com/Brehannah?tab=repositories"><button className="btn btn-outline-dark">GITHUB</button></a>
+           
+            <a href="www.linkedin.com/in/breana-hannah123"><button className="btn btn-outline-dark">LINKEDIN</button></a>
+          
+            <a href="/images/BHresume.pdf" target="_blank"><button className="btn btn-outline-dark">RESUME</button></a>
         </div>
     </div>
 </div>
@@ -37,4 +40,4 @@ const about = () => {
   );
 }
 
-export default about
+export default index;
